@@ -301,6 +301,21 @@ header nav ul li {
     max-width: 700px;
 }
 
+.review-block {
+    transition: transform 0.5s ease;
+    position: relative; /* Добавлено для правильной работы анимации */
+}
+
+.slide-out {
+    transform: translateX(-100%); /* Уезжает налево */
+}
+
+.slide-in {
+    transform: translateX(100%); /* Приезжает справа */
+}
+
+
+
 .review-block .mark {
     font-size: 35px;
     color: #FFFB27;
@@ -361,6 +376,7 @@ header nav ul li {
     width: 30px;
     height: auto;
 }
+
 
 .order-form {
     border-radius: 20px;
